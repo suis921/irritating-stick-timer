@@ -26,12 +26,29 @@ Python / Tkinter / pygameを使用して開発した、イベント向けのイ�
 
 ## 実行方法
 
-Python環境を用意し、必要なライブラリをインストールしたうえで実行してください。
+### Pythonから実行
+
+必要なライブラリをインストールします。
 
 ```bash
 pip install -r requirements.txt
+```
+
+アプリケーションを実行します。
+
+```bash
 python Timer.py
 ```
+
+### exeファイルのビルド
+
+PyInstallerを使用してexeファイルを生成できます。
+
+```bash
+pyinstaller Timer.spec
+```
+
+生成されたexeファイルは `dist` ディレクトリ内に配置されます。
 
 ## 注意事項
 
