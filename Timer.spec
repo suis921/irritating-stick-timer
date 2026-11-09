@@ -1,0 +1,36 @@
+a = Analysis(
+    ['Timer.py'],
+    pathex=[],
+    binaries=[],
+    datas=[('heaven_and_hell_loop.mp3', '.'), ('comedians_galop_loop.mp3', '.'), ('csikos_post_loop.mp3', '.')],
+    hiddenimports=[],
+    hookspath=[],
+    hooksconfig={},
+    runtime_hooks=[],
+    excludes=[],
+    noarchive=False,
+    optimize=0,
+)
+pyz = PYZ(a.pure)
+
+exe = EXE(
+    pyz,
+    a.scripts,
+    a.binaries,
+    a.datas,
+    [],
+    name='Timer',
+    debug=False,
+    bootloader_ignore_signals=False,
+    strip=False,
+    upx=True,
+    upx_exclude=[],
+    runtime_tmpdir=None,
+    console=False,
+    disable_windowed_traceback=False,
+    argv_emulation=False,
+    target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None,
+    icon=['Timer.ico'],
+)
